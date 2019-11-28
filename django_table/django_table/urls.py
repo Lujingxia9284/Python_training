@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from bootstrapTable.views import index
+from bootstrapTable.views import *
 
 urlpatterns = [
     path('',index),
+    path('jsondata',getData),
     path('admin/', admin.site.urls),
 ]
